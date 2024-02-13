@@ -1,0 +1,9 @@
+title: Bundle Adjustment
+description: Bundle Adjustment for machine vision series
+logo: images/Lincon.jpg
+remote_theme: pages-themes/dinky@v0.2.0
+linkedin: https://www.linkedin.com/in/zeel-bhatt-613916148/
+website: https://zeelbhatt.github.io/
+
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
