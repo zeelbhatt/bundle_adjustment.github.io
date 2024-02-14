@@ -1,6 +1,6 @@
 # Camera Calibration and Bundle Adjustment
 
-Camera calibration means that we want to estimate the parameters which sits inside the camera which describe us how a point in a 3D world is mapped into the 2D image plane.This subject is significantly popular but remains widely misunderstood. It delves into a complex web of related topics, including linear transformations, Singular value decomposition(SVD), Bundle Adjustment, Non-linear least-sqauares etc. We will discuss them all and also see the code. We will also make use of powerfull C++ libraries like Eigen and Ceres to solve our Linear and nonlinear problems. We will see... 
+Camera calibration involves determining the internal parameters of a camera that explain how a point in a 3D world is translated onto a 2D image plane.This subject is significantly popular but remains widely misunderstood. It delves into a complex web of related topics, including linear transformations, Singular value decomposition(SVD), Bundle Adjustment, Non-linear least-sqauares etc. We will discuss them all and also see the code. We will also make use of powerfull C++ libraries like Eigen and Ceres to solve our Linear and nonlinear problems. We will see... 
 - What exactly is camera calibration? 
 - The challanges in estimating the camera parameters
 - The linear solution using linear algebra
