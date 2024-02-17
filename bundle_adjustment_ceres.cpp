@@ -13,7 +13,7 @@ int main(int argc, char **argv){
     //     return 1;
     // }
 
-    BALProblem bal_problem("/home/zeelb/slambook/ch9/problem-16-22106-pre.txt");
+    BALProblem bal_problem("./problem-16-22106-pre.txt");
     bal_problem.Normalize();
     bal_problem.Perturb(0.1, 0.5, 0.5);
     bal_problem.WriteToPLYFile("initial.ply");
