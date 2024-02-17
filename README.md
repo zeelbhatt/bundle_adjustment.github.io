@@ -5,6 +5,7 @@ Camera calibration involves determining the internal parameters of a camera that
 - The linear solution using linear algebra
 - The Non-linear soltion using Bundle Adjustment 
 
+## Linear Solution
 The pinhole camera model describes the mathematical relationship between the coordinates of a point in three-dimensional space and its projection onto the image plane of an ideal pinhole camera, where the camera aperture is described as a point and no lenses are used to focus light.
 <p align="center">
   <img src="images/camera_model.png" width="400"> 
@@ -24,7 +25,27 @@ Since we are deciding the coordinate frame. We can put the checkerboard plane as
 </p>
 We can solve this linear system using Least Squared method in this form A⃗x = 0
 
+<p align="center">
+  <img src="images/board_pattern.png" width="800"> 
+</p>
 
+## Non-linear solution
+There are some disadvantages of linear solutions:
+- Doesn’t model radial distortion
+- Hard to impose constrains(e.g. known f )
+For these reasons non-linear methods are preferred. For non linear solution, we can define Loss function E between projected 3D points and image positions. This loss funiton is called **re-projection error**
+- Then we can minimise E using non-linear optimisation techniques
+- This repo uses C++ library Ceres to optimize the **Reprojection error**
+
+Below is the code snippet which is defining the obejective funtion in C++.
+
+  
+
+
+
+```cpp
+
+```
 
 
 
