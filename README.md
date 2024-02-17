@@ -44,6 +44,15 @@ Below is the code snippet which is defining the obejective funtion in C++.
 
 
 ```cpp
+template<typename T>
+    bool operator()(const T *const camera, const T *const point, T *residuals) const {
+        T predictions[2];
+        CamProjectionWithDistortion(camera, point, predictions);
+        residuals[0] = predictions[0] - T(observed_x);
+        residuals[1] = predictions[1] - T(observed_y);
+
+        return true;
+    }
 
 ```
 
