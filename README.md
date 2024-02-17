@@ -55,6 +55,11 @@ template<typename T>
     }
 
 ```
+To perform bundle adjustment I use BAL dataset. BAL dataset uses images from Flickr.com to construct the point cloud of bulding in Rome, Venice, Denmark etc.
+Below is the output of my performance of bundle adjustment on that dataset.
 
+<p align="center">
+  <img src="images/building.png" width="800"> 
+</p>
 
 
