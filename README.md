@@ -19,6 +19,12 @@ Assuming the world and image points are represented in homogeneous coordinates, 
 
 To solve for M , we need pairs of image points ⃗u and 3D points X. We may be calibrating a camera to capture images of a planar surface (e.g., a checker-board pattern).
 Since we are deciding the coordinate frame. We can put the checkerboard plane as Z = 0
+<p align="center">
+  <img src="images/eq_2.png" width="300"> 
+</p>
+We can solve this linear system using Least Squared method in this form A⃗x = 0
+
+
 
 
 
