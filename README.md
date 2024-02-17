@@ -38,7 +38,7 @@ For these reasons non-linear methods are preferred. For non linear solution, we 
 - This repo uses C++ library Ceres to optimize the **Reprojection error**
 
 <p align="center">
-  <img src="images/BA_loss.png" width="800"> 
+  <img src="images/BA_loss.png" width="500"> 
 </p>
 
 Below is the code snippet which is defining the obejective funtion in C++.
